@@ -31,6 +31,18 @@ class textEditor:
         self.fileMenu.add_separator()
         self.fileMenu.add_command(label="Exit", command=quit)
 
+        #adding help menu
+        self.helpmenu = Menu(self.menu, tearoff=0)
+        self.helpmenu.add_command(label='Help', command=self.help)
+        self.helpmenu.add_command(label='Documentation', command=self.help)
+        self.menu.add_cascade(label="Help", menu=self.helpmenu)
+
+        #adding a run menu
+        self.Runmenu = Menu(self.menu, tearoff=0)
+        self.Runmenu.add_command(label='Build', command=self.help)
+        self.Runmenu.add_command(label='Build and Run', command=self.help)
+        self.menu.add_cascade(label="Run", menu=self.Runmenu)
+
         self.window.mainloop()
 
     def save(self):
@@ -52,6 +64,9 @@ class textEditor:
                 self.textarea.insert('1.0', line)
         except FileNotFoundError:
             showerror(message="File does not exists!")
+    
+    def help(self):
+        pass
 
 
 if __name__ == "__main__":
