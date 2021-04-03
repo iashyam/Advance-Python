@@ -8,3 +8,8 @@ dictionary = {'name':'Shyam','age':16, 'eamil':'shyam10kwd@gmail.com'}
 
 y = [(key, dictionary[key]) for key in dictionary]
 print(y)
+
+#tuple comprihenson
+my_tuple = ('a', 'b','c','d','s','e','f','s')
+y = [i for i in my_tuple]
+print(y)
