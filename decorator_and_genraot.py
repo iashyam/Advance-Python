@@ -22,8 +22,6 @@
 
 # hello()
 
-
-
 def decorator_function(function):
 
     def wrapper_function():
