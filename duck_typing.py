@@ -31,7 +31,6 @@ def call(object):
 # duck_object = duck()
 # call(duck_object)
 
-
 #duck typing is a concept of python programming claiming that a method can be executed if the method is in the class.  \+ 
 
 def call2(object):
