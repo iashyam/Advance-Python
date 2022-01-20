@@ -4,6 +4,7 @@
 
 #1. TO cheking every step and eleminating exceptions
 #THis is called check before you leave
+
 a = [1,2,3,4,5,7,]
 
 #printing the index of seven
