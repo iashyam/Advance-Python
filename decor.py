@@ -5,7 +5,6 @@ def fun1(f):
     b = f(a)
     plot(b,a)
     show()
-
     
 @fun1
 def sen(x):
